@@ -6,9 +6,19 @@ void solve(){
     int n,k;
     cin >> n >> k;
     vector<int> v(n);
-    for(auto &i:v) cin >> i;
+    for(auto &x:v) cin >> x;
+    int ans=0;
+    sort(v.begin(),v.end());
     for(int i=0;i<n;i++){
-        
+        ans++;
+        if(v[i]!=1){
+            for(int j=2;j*j<=v[i];j++){
+                if(v[i]%j==0){
+                    v[i]/=2;
+                    ans+=
+                }
+            }
+        }
     }
 }
 
