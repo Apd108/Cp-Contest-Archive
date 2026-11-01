@@ -7,7 +7,7 @@ void solve(){
   vector<int>v(n);  
   for(auto &x:v) cin >> x;
   for(int i=0;i<n-2;i++){
-    if(v[i]==v[i+1] && v[i+i]!=v[i+2]){
+    if(v[i]==v[i+1] && v[i+1]!=v[i+2]){
         cout << i+3 << '\n';
         return;
     }
